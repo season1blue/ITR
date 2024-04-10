@@ -1,0 +1,5 @@
+tensorboard
+h5py
+scikit-learn
+pytorch-crf
+peft

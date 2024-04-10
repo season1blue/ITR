@@ -1,0 +1,2174 @@
+09/28 10:20:28:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 197, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 138, in _main
+    check_dirs(dirs=[args.dataset_dir, args.log_dir, args.ckpt_dir])
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 222, in check_dirs
+    args.logger.info(f'Existed: {dir}')
+NameError: name 'args' is not defined
+09/28 10:20:28:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 197, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 138, in _main
+    check_dirs(dirs=[args.dataset_dir, args.log_dir, args.ckpt_dir])
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 222, in check_dirs
+    args.logger.info(f'Existed: {dir}')
+NameError: name 'args' is not defined
+09/28 10:22:03:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 197, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 153, in _main
+    args.ICL_ds = MyDataset(args.data_file['train'], tokenizer=None, img_file=args.img_file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 33, in __init__
+    self.data = self._get_data(file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 58, in _get_data
+    args.logger.info(f'{file_name}\t\traw data num: {len(raw_data)}\t\tprocessed data num: {len(data)}')
+NameError: name 'args' is not defined
+09/28 10:22:03:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 197, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 153, in _main
+    args.ICL_ds = MyDataset(args.data_file['train'], tokenizer=None, img_file=args.img_file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 33, in __init__
+    self.data = self._get_data(file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 58, in _get_data
+    args.logger.info(f'{file_name}\t\traw data num: {len(raw_data)}\t\tprocessed data num: {len(data)}')
+NameError: name 'args' is not defined
+09/28 10:23:41:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 197, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 156, in _main
+    train_ds = MyDataset(args.data_file['train'], tokenizer=True, train_flag=True, **args.kwargs_ds)  # train_flag: for exclude same training example
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 44, in __init__
+    self._add_img_feat() # convert image url to clip output feature
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 105, in _add_img_feat
+    args.logger.info("adding image feature into self.data")
+AttributeError: 'Namespace' object has no attribute 'logger'
+09/28 10:23:41:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 197, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 156, in _main
+    train_ds = MyDataset(args.data_file['train'], tokenizer=True, train_flag=True, **args.kwargs_ds)  # train_flag: for exclude same training example
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 44, in __init__
+    self._add_img_feat() # convert image url to clip output feature
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 105, in _add_img_feat
+    args.logger.info("adding image feature into self.data")
+AttributeError: 'Namespace' object has no attribute 'logger'
+09/28 10:26:13:  
+Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:26:13:  ../data/WikiMEL/train_examples.json
+09/28 10:26:13:  
+Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:26:13:  ../data/WikiMEL/train_examples.json
+09/28 10:26:14:  
+Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:26:14:  ../data/WikiMEL/dev_examples.json
+09/28 10:26:14:  
+Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:26:14:  ../data/WikiMEL/dev_examples.json
+09/28 10:26:14:  
+train data num: 18091  dev data num: 2585
+09/28 10:26:14:  
+train data num: 18091  dev data num: 2585
+09/28 10:31:27:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:31:27:  ../data/WikiMEL/train_examples.json
+09/28 10:31:27:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:31:27:  ../data/WikiMEL/train_examples.json
+09/28 10:31:29:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:31:29:  ../data/WikiMEL/dev_examples.json
+09/28 10:31:29:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:31:29:  ../data/WikiMEL/dev_examples.json
+09/28 10:31:29:  train data num: 18091  dev data num: 2585
+09/28 10:31:29:  train data num: 18091  dev data num: 2585
+09/28 10:49:28:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:49:28:  ../data/WikiMEL/train_examples.json
+09/28 10:49:28:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:49:29:  ../data/WikiMEL/train_examples.json
+09/28 10:49:29:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:49:29:  ../data/WikiMEL/dev_examples.json
+09/28 10:49:29:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:49:29:  ../data/WikiMEL/dev_examples.json
+09/28 10:49:30:  train data num: 18091  dev data num: 2585
+09/28 10:49:30:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 197, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    args.tokenizer = LlamaTokenizer.from_pretrained(args.model_path)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 1854, in from_pretrained
+    return cls._from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 2017, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/llama/tokenization_llama.py", line 156, in __init__
+    self.sp_model = self.get_spm_processor()
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/llama/tokenization_llama.py", line 166, in get_spm_processor
+    tokenizer.Load(self.vocab_file)
+  File "/usr/local/lib/python3.10/dist-packages/sentencepiece/__init__.py", line 905, in Load
+    return self.LoadFromFile(model_file)
+  File "/usr/local/lib/python3.10/dist-packages/sentencepiece/__init__.py", line 310, in LoadFromFile
+    return _sentencepiece.SentencePieceProcessor_LoadFromFile(self, arg)
+TypeError: not a string
+09/28 10:49:30:  train data num: 18091  dev data num: 2585
+09/28 10:49:30:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 197, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    args.tokenizer = LlamaTokenizer.from_pretrained(args.model_path)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 1854, in from_pretrained
+    return cls._from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 2017, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/llama/tokenization_llama.py", line 156, in __init__
+    self.sp_model = self.get_spm_processor()
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/llama/tokenization_llama.py", line 166, in get_spm_processor
+    tokenizer.Load(self.vocab_file)
+  File "/usr/local/lib/python3.10/dist-packages/sentencepiece/__init__.py", line 905, in Load
+    return self.LoadFromFile(model_file)
+  File "/usr/local/lib/python3.10/dist-packages/sentencepiece/__init__.py", line 310, in LoadFromFile
+    return _sentencepiece.SentencePieceProcessor_LoadFromFile(self, arg)
+TypeError: not a string
+09/28 10:50:26:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:50:26:  ../data/WikiMEL/train_examples.json
+09/28 10:50:27:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:50:27:  ../data/WikiMEL/dev_examples.json
+09/28 10:50:27:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:50:27:  ../data/WikiMEL/train_examples.json
+09/28 10:50:27:  train data num: 18091  dev data num: 2585
+09/28 10:50:28:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:50:28:  ../data/WikiMEL/dev_examples.json
+09/28 10:50:28:  train data num: 18091  dev data num: 2585
+09/28 10:55:31:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:55:31:  ../data/WikiMEL/train_examples.json
+09/28 10:55:31:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:55:31:  ../data/WikiMEL/train_examples.json
+09/28 10:55:32:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:55:32:  ../data/WikiMEL/dev_examples.json
+09/28 10:55:32:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:55:32:  ../data/WikiMEL/dev_examples.json
+09/28 10:55:33:  train data num: 18091  dev data num: 2585
+09/28 10:55:33:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 197, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    args.tokenizer = LlamaTokenizer.from_pretrained(args.model_path)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 1854, in from_pretrained
+    return cls._from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 2017, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/llama/tokenization_llama.py", line 156, in __init__
+    self.sp_model = self.get_spm_processor()
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/llama/tokenization_llama.py", line 166, in get_spm_processor
+    tokenizer.Load(self.vocab_file)
+  File "/usr/local/lib/python3.10/dist-packages/sentencepiece/__init__.py", line 905, in Load
+    return self.LoadFromFile(model_file)
+  File "/usr/local/lib/python3.10/dist-packages/sentencepiece/__init__.py", line 310, in LoadFromFile
+    return _sentencepiece.SentencePieceProcessor_LoadFromFile(self, arg)
+TypeError: not a string
+09/28 10:55:33:  train data num: 18091  dev data num: 2585
+09/28 10:55:33:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 197, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    args.tokenizer = LlamaTokenizer.from_pretrained(args.model_path)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 1854, in from_pretrained
+    return cls._from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 2017, in _from_pretrained
+    tokenizer = cls(*init_inputs, **init_kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/llama/tokenization_llama.py", line 156, in __init__
+    self.sp_model = self.get_spm_processor()
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/llama/tokenization_llama.py", line 166, in get_spm_processor
+    tokenizer.Load(self.vocab_file)
+  File "/usr/local/lib/python3.10/dist-packages/sentencepiece/__init__.py", line 905, in Load
+    return self.LoadFromFile(model_file)
+  File "/usr/local/lib/python3.10/dist-packages/sentencepiece/__init__.py", line 310, in LoadFromFile
+    return _sentencepiece.SentencePieceProcessor_LoadFromFile(self, arg)
+TypeError: not a string
+09/28 10:57:32:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:57:32:  ../data/WikiMEL/train_examples.json
+09/28 10:57:32:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 10:57:32:  ../data/WikiMEL/train_examples.json
+09/28 10:57:33:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:57:33:  ../data/WikiMEL/dev_examples.json
+09/28 10:57:33:  train data num: 18091  dev data num: 2585
+09/28 10:57:33:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 10:57:33:  ../data/WikiMEL/dev_examples.json
+09/28 10:57:33:  train data num: 18091  dev data num: 2585
+09/28 10:57:33:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 320, in wrap_with_peft
+    args.tokenizer = AutoTokenizer.from_pretrained(args.model_path)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/tokenization_auto.py", line 733, in from_pretrained
+    raise ValueError(
+ValueError: Tokenizer class QWenTokenizer does not exist or is not currently imported.
+09/28 10:57:33:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 320, in wrap_with_peft
+    args.tokenizer = AutoTokenizer.from_pretrained(args.model_path)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/tokenization_auto.py", line 733, in from_pretrained
+    raise ValueError(
+ValueError: Tokenizer class QWenTokenizer does not exist or is not currently imported.
+09/28 11:00:36:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:00:36:  ../data/WikiMEL/train_examples.json
+09/28 11:00:36:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:00:36:  ../data/WikiMEL/train_examples.json
+09/28 11:00:36:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:00:36:  ../data/WikiMEL/dev_examples.json
+09/28 11:00:37:  train data num: 18091  dev data num: 2585
+09/28 11:00:37:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:00:37:  ../data/WikiMEL/dev_examples.json
+09/28 11:00:37:  train data num: 18091  dev data num: 2585
+09/28 11:00:52:  Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 596, in resolve_trust_remote_code
+    answer = input(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 577, in _raise_timeout_error
+    raise ValueError(
+ValueError: Loading this model requires you to execute the configuration file in that repo on your local machine. We asked if it was okay but did not get an answer. Make sure you have read the code there to avoid malicious use, then set the option `trust_remote_code=True` to remove this error.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 322, in wrap_with_peft
+    model = AutoModelForCausalLM.from_pretrained(args.model_path, torch_dtype=torch.float16, device_map=device_map)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/auto_factory.py", line 527, in from_pretrained
+    config, kwargs = AutoConfig.from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/configuration_auto.py", line 1026, in from_pretrained
+    trust_remote_code = resolve_trust_remote_code(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 608, in resolve_trust_remote_code
+    raise ValueError(
+ValueError: Loading this model requires you to execute execute some code in that repo on your local machine. Make sure you have read the code at https://hf.co/../data/qwen to avoid malicious use, then set the option `trust_remote_code=True` to remove this error.
+09/28 11:01:06:  Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 596, in resolve_trust_remote_code
+    answer = input(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 577, in _raise_timeout_error
+    raise ValueError(
+ValueError: Loading this model requires you to execute the configuration file in that repo on your local machine. We asked if it was okay but did not get an answer. Make sure you have read the code there to avoid malicious use, then set the option `trust_remote_code=True` to remove this error.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 322, in wrap_with_peft
+    model = AutoModelForCausalLM.from_pretrained(args.model_path, torch_dtype=torch.float16, device_map=device_map)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/auto_factory.py", line 545, in from_pretrained
+    trust_remote_code = resolve_trust_remote_code(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 608, in resolve_trust_remote_code
+    raise ValueError(
+ValueError: Loading this model requires you to execute execute some code in that repo on your local machine. Make sure you have read the code at https://hf.co/../data/qwen to avoid malicious use, then set the option `trust_remote_code=True` to remove this error.
+09/28 11:01:32:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:01:32:  ../data/WikiMEL/train_examples.json
+09/28 11:01:33:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:01:33:  ../data/WikiMEL/dev_examples.json
+09/28 11:01:33:  train data num: 18091  dev data num: 2585
+09/28 11:01:33:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:01:33:  ../data/WikiMEL/train_examples.json
+09/28 11:01:34:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:01:34:  ../data/WikiMEL/dev_examples.json
+09/28 11:01:34:  train data num: 18091  dev data num: 2585
+09/28 11:01:35:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 322, in wrap_with_peft
+    model = AutoModelForCausalLM.from_pretrained(args.model_path, torch_dtype=torch.float16, device_map=device_map, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/auto_factory.py", line 550, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 485, in get_class_from_dynamic_module
+    final_module = get_cached_module_file(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 313, in get_cached_module_file
+    modules_needed = check_imports(resolved_module_file)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 179, in check_imports
+    raise ImportError(
+ImportError: This modeling file requires the following packages that were not found in your environment: transformers_stream_generator. Run `pip install transformers_stream_generator`
+09/28 11:01:35:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 322, in wrap_with_peft
+    model = AutoModelForCausalLM.from_pretrained(args.model_path, torch_dtype=torch.float16, device_map=device_map, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/auto_factory.py", line 550, in from_pretrained
+    model_class = get_class_from_dynamic_module(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 485, in get_class_from_dynamic_module
+    final_module = get_cached_module_file(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 313, in get_cached_module_file
+    modules_needed = check_imports(resolved_module_file)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 179, in check_imports
+    raise ImportError(
+ImportError: This modeling file requires the following packages that were not found in your environment: transformers_stream_generator. Run `pip install transformers_stream_generator`
+09/28 11:02:16:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:02:16:  ../data/WikiMEL/train_examples.json
+09/28 11:02:17:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:02:17:  ../data/WikiMEL/dev_examples.json
+09/28 11:02:17:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:02:17:  ../data/WikiMEL/train_examples.json
+09/28 11:02:17:  train data num: 18091  dev data num: 2585
+09/28 11:02:18:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:02:18:  ../data/WikiMEL/dev_examples.json
+09/28 11:02:18:  train data num: 18091  dev data num: 2585
+09/28 11:04:46:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 335, in wrap_with_peft
+    model = get_peft_model(model, peft_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/mapping.py", line 108, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](model, peft_config, adapter_name=adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 916, in __init__
+    super().__init__(model, peft_config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 116, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 109, in __init__
+    super().__init__(model, config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 88, in __init__
+    self.inject_adapter(self.model, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 205, in inject_adapter
+    peft_config = self._prepare_adapter_config(peft_config, model_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 386, in _prepare_adapter_config
+    raise ValueError("Please specify `target_modules` in `peft_config`")
+ValueError: Please specify `target_modules` in `peft_config`
+09/28 11:04:46:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 335, in wrap_with_peft
+    model = get_peft_model(model, peft_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/mapping.py", line 108, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](model, peft_config, adapter_name=adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 916, in __init__
+    super().__init__(model, peft_config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 116, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 109, in __init__
+    super().__init__(model, config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 88, in __init__
+    self.inject_adapter(self.model, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 205, in inject_adapter
+    peft_config = self._prepare_adapter_config(peft_config, model_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 386, in _prepare_adapter_config
+    raise ValueError("Please specify `target_modules` in `peft_config`")
+ValueError: Please specify `target_modules` in `peft_config`
+09/28 11:07:23:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:07:23:  ../data/WikiMEL/train_examples.json
+09/28 11:07:23:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:07:23:  ../data/WikiMEL/train_examples.json
+09/28 11:07:25:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:07:25:  ../data/WikiMEL/dev_examples.json
+09/28 11:07:25:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:07:25:  ../data/WikiMEL/dev_examples.json
+09/28 11:07:25:  train data num: 18091  dev data num: 2585
+09/28 11:07:25:  train data num: 18091  dev data num: 2585
+09/28 11:09:55:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 335, in wrap_with_peft
+    model = get_peft_model(model, peft_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/mapping.py", line 108, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](model, peft_config, adapter_name=adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 916, in __init__
+    super().__init__(model, peft_config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 116, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 109, in __init__
+    super().__init__(model, config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 88, in __init__
+    self.inject_adapter(self.model, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 205, in inject_adapter
+    peft_config = self._prepare_adapter_config(peft_config, model_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 386, in _prepare_adapter_config
+    raise ValueError("Please specify `target_modules` in `peft_config`")
+ValueError: Please specify `target_modules` in `peft_config`
+09/28 11:09:55:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 335, in wrap_with_peft
+    model = get_peft_model(model, peft_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/mapping.py", line 108, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](model, peft_config, adapter_name=adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 916, in __init__
+    super().__init__(model, peft_config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 116, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 109, in __init__
+    super().__init__(model, config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 88, in __init__
+    self.inject_adapter(self.model, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 205, in inject_adapter
+    peft_config = self._prepare_adapter_config(peft_config, model_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 386, in _prepare_adapter_config
+    raise ValueError("Please specify `target_modules` in `peft_config`")
+ValueError: Please specify `target_modules` in `peft_config`
+09/28 11:18:24:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:18:24:  ../data/WikiMEL/train_examples.json
+09/28 11:18:24:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:18:24:  ../data/WikiMEL/train_examples.json
+09/28 11:18:25:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:18:25:  ../data/WikiMEL/dev_examples.json
+09/28 11:18:25:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:18:25:  ../data/WikiMEL/dev_examples.json
+09/28 11:18:25:  train data num: 18091  dev data num: 2585
+09/28 11:18:25:  train data num: 18091  dev data num: 2585
+09/28 11:20:46:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 173, in _main
+    args.model = Generator(lm=lm, tokenizer=args.tokenizer, inference=False, **kwargs_model).to(args.device)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 15, in __init__
+    self.text_embedder = lm.module.base_model.model.model.embed_tokens  # for opt  TRAIN
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'QWenLMHeadModel' object has no attribute 'model'
+09/28 11:20:47:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 173, in _main
+    args.model = Generator(lm=lm, tokenizer=args.tokenizer, inference=False, **kwargs_model).to(args.device)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 15, in __init__
+    self.text_embedder = lm.module.base_model.model.model.embed_tokens  # for opt  TRAIN
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'QWenLMHeadModel' object has no attribute 'model'
+09/28 11:21:58:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:21:58:  ../data/WikiMEL/train_examples.json
+09/28 11:21:59:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:21:59:  ../data/WikiMEL/train_examples.json
+09/28 11:22:00:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:22:00:  ../data/WikiMEL/dev_examples.json
+09/28 11:22:00:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:22:00:  ../data/WikiMEL/dev_examples.json
+09/28 11:22:00:  train data num: 18091  dev data num: 2585
+09/28 11:22:00:  train data num: 18091  dev data num: 2585
+09/28 11:24:17:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 173, in _main
+    args.model = Generator(lm=lm, tokenizer=args.tokenizer, inference=False, **kwargs_model).to(args.device)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 15, in __init__
+    self.text_embedder = lm.module.base_model.model.embed_tokens  # for opt  TRAIN
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'QWenLMHeadModel' object has no attribute 'embed_tokens'
+09/28 11:24:17:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 173, in _main
+    args.model = Generator(lm=lm, tokenizer=args.tokenizer, inference=False, **kwargs_model).to(args.device)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 15, in __init__
+    self.text_embedder = lm.module.base_model.model.embed_tokens  # for opt  TRAIN
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'QWenLMHeadModel' object has no attribute 'embed_tokens'
+09/28 11:25:41:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:25:41:  ../data/WikiMEL/train_examples.json
+09/28 11:25:41:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:25:41:  ../data/WikiMEL/train_examples.json
+09/28 11:25:42:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:25:42:  ../data/WikiMEL/dev_examples.json
+09/28 11:25:42:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:25:42:  ../data/WikiMEL/dev_examples.json
+09/28 11:25:42:  train data num: 18091  dev data num: 2585
+09/28 11:25:42:  train data num: 18091  dev data num: 2585
+09/28 11:28:16:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 173, in _main
+    args.model = Generator(lm=lm, tokenizer=args.tokenizer, inference=False, **kwargs_model).to(args.device)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 16, in __init__
+    self.text_embedder = lm.module.base_model.model.embed_tokens  # for opt  TRAIN
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'QWenLMHeadModel' object has no attribute 'embed_tokens'
+09/28 11:28:16:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 173, in _main
+    args.model = Generator(lm=lm, tokenizer=args.tokenizer, inference=False, **kwargs_model).to(args.device)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 16, in __init__
+    self.text_embedder = lm.module.base_model.model.embed_tokens  # for opt  TRAIN
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'QWenLMHeadModel' object has no attribute 'embed_tokens'
+09/28 11:30:56:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:30:56:  ../data/WikiMEL/train_examples.json
+09/28 11:30:56:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:30:56:  ../data/WikiMEL/train_examples.json
+09/28 11:30:57:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:30:57:  ../data/WikiMEL/dev_examples.json
+09/28 11:30:57:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:30:57:  ../data/WikiMEL/dev_examples.json
+09/28 11:30:57:  train data num: 18091  dev data num: 2585
+09/28 11:30:57:  train data num: 18091  dev data num: 2585
+09/28 11:33:22:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 108, in _train
+    ls = args.model(batch_pairs, batch_targets).loss
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 23, in forward
+    outputs = self.lm(input_ids=None, inputs_embeds=inputs_embeds, attention_mask=attention_mask, labels=labels)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 946, in forward
+    return self.base_model(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 1110, in forward
+    transformer_outputs = self.transformer(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 919, in forward
+    outputs = torch.utils.checkpoint.checkpoint(
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 249, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 107, in forward
+    outputs = run_function(*args)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 915, in custom_forward
+    return module(*inputs, use_cache, output_attentions)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 632, in forward
+    attn_outputs = self.attn(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 457, in forward
+    mixed_x_layer = self.c_attn(hidden_states)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype
+09/28 11:33:22:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 108, in _train
+    ls = args.model(batch_pairs, batch_targets).loss
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 23, in forward
+    outputs = self.lm(input_ids=None, inputs_embeds=inputs_embeds, attention_mask=attention_mask, labels=labels)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 946, in forward
+    return self.base_model(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 1110, in forward
+    transformer_outputs = self.transformer(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 919, in forward
+    outputs = torch.utils.checkpoint.checkpoint(
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 249, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 107, in forward
+    outputs = run_function(*args)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 915, in custom_forward
+    return module(*inputs, use_cache, output_attentions)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 632, in forward
+    attn_outputs = self.attn(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 457, in forward
+    mixed_x_layer = self.c_attn(hidden_states)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype
+09/28 11:56:49:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:56:49:  ../data/WikiMEL/train_examples.json
+09/28 11:56:49:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 11:56:49:  ../data/WikiMEL/train_examples.json
+09/28 11:56:50:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:56:50:  ../data/WikiMEL/dev_examples.json
+09/28 11:56:50:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 11:56:50:  ../data/WikiMEL/dev_examples.json
+09/28 11:56:50:  train data num: 18091  dev data num: 2585
+09/28 11:56:50:  train data num: 18091  dev data num: 2585
+09/28 11:59:29:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 108, in _train
+    ls = args.model(batch_pairs, batch_targets).loss
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 24, in forward
+    outputs = self.lm(input_ids=None, inputs_embeds=inputs_embeds, attention_mask=attention_mask, labels=labels)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 946, in forward
+    return self.base_model(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 1110, in forward
+    transformer_outputs = self.transformer(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 919, in forward
+    outputs = torch.utils.checkpoint.checkpoint(
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 249, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 107, in forward
+    outputs = run_function(*args)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 915, in custom_forward
+    return module(*inputs, use_cache, output_attentions)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 632, in forward
+    attn_outputs = self.attn(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 457, in forward
+    mixed_x_layer = self.c_attn(hidden_states)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype
+09/28 11:59:29:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 108, in _train
+    ls = args.model(batch_pairs, batch_targets).loss
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 24, in forward
+    outputs = self.lm(input_ids=None, inputs_embeds=inputs_embeds, attention_mask=attention_mask, labels=labels)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 946, in forward
+    return self.base_model(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 1110, in forward
+    transformer_outputs = self.transformer(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 919, in forward
+    outputs = torch.utils.checkpoint.checkpoint(
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 249, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 107, in forward
+    outputs = run_function(*args)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 915, in custom_forward
+    return module(*inputs, use_cache, output_attentions)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 632, in forward
+    attn_outputs = self.attn(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 457, in forward
+    mixed_x_layer = self.c_attn(hidden_states)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype
+09/28 12:16:45:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 12:16:45:  ../data/WikiMEL/train_examples.json
+09/28 12:16:45:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 12:16:45:  ../data/WikiMEL/train_examples.json
+09/28 12:16:47:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 12:16:47:  ../data/WikiMEL/dev_examples.json
+09/28 12:16:47:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 12:16:47:  ../data/WikiMEL/dev_examples.json
+09/28 12:16:47:  train data num: 18091  dev data num: 2585
+09/28 12:16:47:  train data num: 18091  dev data num: 2585
+09/28 12:16:47:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 320, in wrap_with_peft
+    args.tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/tokenization_auto.py", line 724, in from_pretrained
+    raise ValueError(
+ValueError: Tokenizer class LLaMATokenizer does not exist or is not currently imported.
+09/28 12:16:47:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 320, in wrap_with_peft
+    args.tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/tokenization_auto.py", line 724, in from_pretrained
+    raise ValueError(
+ValueError: Tokenizer class LLaMATokenizer does not exist or is not currently imported.
+09/28 12:17:59:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 12:17:59:  ../data/WikiMEL/train_examples.json
+09/28 12:18:00:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 12:18:00:  ../data/WikiMEL/dev_examples.json
+09/28 12:18:00:  train data num: 18091  dev data num: 2585
+09/28 12:18:00:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 12:18:00:  ../data/WikiMEL/train_examples.json
+09/28 12:18:00:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 12:18:00:  ../data/WikiMEL/dev_examples.json
+09/28 12:18:01:  train data num: 18091  dev data num: 2585
+09/28 12:19:14:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 335, in wrap_with_peft
+    model = get_peft_model(model, peft_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/mapping.py", line 108, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](model, peft_config, adapter_name=adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 916, in __init__
+    super().__init__(model, peft_config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 116, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 109, in __init__
+    super().__init__(model, config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 88, in __init__
+    self.inject_adapter(self.model, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 222, in inject_adapter
+    raise ValueError(
+ValueError: Target modules ['c_proj'] not found in the base model. Please check the target modules and try again.
+09/28 12:19:14:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 335, in wrap_with_peft
+    model = get_peft_model(model, peft_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/mapping.py", line 108, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](model, peft_config, adapter_name=adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 916, in __init__
+    super().__init__(model, peft_config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 116, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 109, in __init__
+    super().__init__(model, config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 88, in __init__
+    self.inject_adapter(self.model, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 222, in inject_adapter
+    raise ValueError(
+ValueError: Target modules ['c_proj'] not found in the base model. Please check the target modules and try again.
+09/28 12:19:57:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 12:19:57:  ../data/WikiMEL/train_examples.json
+09/28 12:19:57:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 12:19:57:  ../data/WikiMEL/train_examples.json
+09/28 12:19:58:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 12:19:58:  ../data/WikiMEL/dev_examples.json
+09/28 12:19:58:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 12:19:58:  ../data/WikiMEL/dev_examples.json
+09/28 12:19:58:  train data num: 18091  dev data num: 2585
+09/28 12:19:58:  train data num: 18091  dev data num: 2585
+09/28 12:34:16:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 12:34:16:  ../data/WikiMEL/train_examples.json
+09/28 12:34:16:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 12:34:16:  ../data/WikiMEL/train_examples.json
+09/28 12:34:17:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 12:34:17:  ../data/WikiMEL/dev_examples.json
+09/28 12:34:17:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 12:34:17:  ../data/WikiMEL/dev_examples.json
+09/28 12:34:17:  train data num: 18091  dev data num: 2585
+09/28 12:34:17:  train data num: 18091  dev data num: 2585
+09/28 12:36:53:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 173, in _main
+    args.model = Generator(lm=lm, tokenizer=args.tokenizer, inference=False, **kwargs_model).to(args.device)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 16, in __init__
+    self.text_embedder = lm.module.base_model.model.model.embed_tokens  # for opt  TRAIN llama
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'QWenLMHeadModel' object has no attribute 'model'
+09/28 12:36:53:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 173, in _main
+    args.model = Generator(lm=lm, tokenizer=args.tokenizer, inference=False, **kwargs_model).to(args.device)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 16, in __init__
+    self.text_embedder = lm.module.base_model.model.model.embed_tokens  # for opt  TRAIN llama
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1614, in __getattr__
+    raise AttributeError("'{}' object has no attribute '{}'".format(
+AttributeError: 'QWenLMHeadModel' object has no attribute 'model'
+09/28 12:37:32:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 12:37:32:  ../data/WikiMEL/train_examples.json
+09/28 12:37:32:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 12:37:32:  ../data/WikiMEL/train_examples.json
+09/28 12:37:33:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 12:37:33:  ../data/WikiMEL/dev_examples.json
+09/28 12:37:33:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 12:37:34:  ../data/WikiMEL/dev_examples.json
+09/28 12:37:34:  train data num: 18091  dev data num: 2585
+09/28 12:37:34:  train data num: 18091  dev data num: 2585
+09/28 12:40:10:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 108, in _train
+    ls = args.model(batch_pairs, batch_targets).loss
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 26, in forward
+    outputs = self.lm(input_ids=None, inputs_embeds=inputs_embeds, attention_mask=attention_mask, labels=labels)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 946, in forward
+    return self.base_model(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 1110, in forward
+    transformer_outputs = self.transformer(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 919, in forward
+    outputs = torch.utils.checkpoint.checkpoint(
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 249, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 107, in forward
+    outputs = run_function(*args)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 915, in custom_forward
+    return module(*inputs, use_cache, output_attentions)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 632, in forward
+    attn_outputs = self.attn(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 457, in forward
+    mixed_x_layer = self.c_attn(hidden_states)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype
+09/28 12:40:10:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 108, in _train
+    ls = args.model(batch_pairs, batch_targets).loss
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 26, in forward
+    outputs = self.lm(input_ids=None, inputs_embeds=inputs_embeds, attention_mask=attention_mask, labels=labels)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 946, in forward
+    return self.base_model(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 1110, in forward
+    transformer_outputs = self.transformer(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 919, in forward
+    outputs = torch.utils.checkpoint.checkpoint(
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 249, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 107, in forward
+    outputs = run_function(*args)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 915, in custom_forward
+    return module(*inputs, use_cache, output_attentions)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 632, in forward
+    attn_outputs = self.attn(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen/modeling_qwen.py", line 457, in forward
+    mixed_x_layer = self.c_attn(hidden_states)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype
+09/28 14:14:22:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 14:14:22:  ../data/WikiMEL/train_examples.json
+09/28 14:14:22:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/28 14:14:22:  ../data/WikiMEL/train_examples.json
+09/28 14:14:23:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 14:14:23:  ../data/WikiMEL/dev_examples.json
+09/28 14:14:23:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/28 14:14:23:  ../data/WikiMEL/dev_examples.json
+09/28 14:14:23:  train data num: 18091  dev data num: 2585
+09/28 14:14:23:  train data num: 18091  dev data num: 2585
+09/28 14:14:23:  Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py", line 428, in cached_file
+    resolved_file = hf_hub_download(
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py", line 1291, in hf_hub_download
+    raise LocalEntryNotFoundError(
+huggingface_hub.utils._errors.LocalEntryNotFoundError: Connection error, and we cannot find the requested files in the disk cache. Please try again or make sure your Internet connection is on.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 320, in wrap_with_peft
+    args.tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/tokenization_auto.py", line 692, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/configuration_auto.py", line 1007, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 620, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 675, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py", line 468, in cached_file
+    raise EnvironmentError(
+OSError: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like Qwen/Qwen-7B-Chat is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+09/28 14:14:23:  Error
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py", line 428, in cached_file
+    resolved_file = hf_hub_download(
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py", line 118, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/file_download.py", line 1291, in hf_hub_download
+    raise LocalEntryNotFoundError(
+huggingface_hub.utils._errors.LocalEntryNotFoundError: Connection error, and we cannot find the requested files in the disk cache. Please try again or make sure your Internet connection is on.
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 320, in wrap_with_peft
+    args.tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/tokenization_auto.py", line 692, in from_pretrained
+    config = AutoConfig.from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/configuration_auto.py", line 1007, in from_pretrained
+    config_dict, unused_kwargs = PretrainedConfig.get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 620, in get_config_dict
+    config_dict, kwargs = cls._get_config_dict(pretrained_model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/configuration_utils.py", line 675, in _get_config_dict
+    resolved_config_file = cached_file(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py", line 468, in cached_file
+    raise EnvironmentError(
+OSError: We couldn't connect to 'https://huggingface.co' to load this file, couldn't find it in the cached files and it looks like Qwen/Qwen-7B-Chat is not the path to a directory containing a file named config.json.
+Checkout your internet connection or see how to run the library in offline mode at 'https://huggingface.co/docs/transformers/installation#offline-mode'.
+09/29 07:26:02:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/29 07:26:02:  ../data/WikiMEL/train_examples.json
+09/29 07:26:02:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/29 07:26:02:  ../data/WikiMEL/train_examples.json
+09/29 07:26:03:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/29 07:26:03:  ../data/WikiMEL/dev_examples.json
+09/29 07:26:03:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/29 07:26:03:  ../data/WikiMEL/dev_examples.json
+09/29 07:26:03:  train data num: 18091  dev data num: 2585
+09/29 07:26:03:  train data num: 18091  dev data num: 2585
+09/29 07:26:03:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 320, in wrap_with_peft
+    args.tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/tokenization_auto.py", line 710, in from_pretrained
+    tokenizer_class = get_class_from_dynamic_module(class_ref, pretrained_model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 485, in get_class_from_dynamic_module
+    final_module = get_cached_module_file(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 292, in get_cached_module_file
+    resolved_module_file = cached_file(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py", line 399, in cached_file
+    raise EnvironmentError(
+OSError: ../data/qwen_chat does not appear to have a file named tokenization_qwen.py. Checkout 'https://huggingface.co/../data/qwen_chat/None' for available files.
+09/29 07:26:03:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 320, in wrap_with_peft
+    args.tokenizer = AutoTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/tokenization_auto.py", line 710, in from_pretrained
+    tokenizer_class = get_class_from_dynamic_module(class_ref, pretrained_model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 485, in get_class_from_dynamic_module
+    final_module = get_cached_module_file(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/dynamic_module_utils.py", line 292, in get_cached_module_file
+    resolved_module_file = cached_file(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py", line 399, in cached_file
+    raise EnvironmentError(
+OSError: ../data/qwen_chat does not appear to have a file named tokenization_qwen.py. Checkout 'https://huggingface.co/../data/qwen_chat/None' for available files.
+09/29 07:28:34:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/29 07:28:34:  ../data/WikiMEL/train_examples.json
+09/29 07:28:35:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/29 07:28:35:  ../data/WikiMEL/train_examples.json
+09/29 07:28:35:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/29 07:28:35:  ../data/WikiMEL/dev_examples.json
+09/29 07:28:35:  train data num: 18091  dev data num: 2585
+09/29 07:28:35:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/29 07:28:35:  ../data/WikiMEL/dev_examples.json
+09/29 07:28:35:  train data num: 18091  dev data num: 2585
+09/29 07:30:15:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 322, in wrap_with_peft
+    model = AutoModelForCausalLM.from_pretrained(args.model_path, torch_dtype=torch.float16, device_map=device_map, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/auto_factory.py", line 511, in from_pretrained
+    return model_class.from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 3091, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 3456, in _load_pretrained_model
+    state_dict = load_state_dict(shard_file)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 458, in load_state_dict
+    with safe_open(checkpoint_file, framework="pt") as f:
+FileNotFoundError: No such file or directory: "../data/qwen_chat/model-00007-of-00008.safetensors"
+09/29 07:30:15:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 322, in wrap_with_peft
+    model = AutoModelForCausalLM.from_pretrained(args.model_path, torch_dtype=torch.float16, device_map=device_map, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/auto_factory.py", line 511, in from_pretrained
+    return model_class.from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 3091, in from_pretrained
+    ) = cls._load_pretrained_model(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 3456, in _load_pretrained_model
+    state_dict = load_state_dict(shard_file)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 458, in load_state_dict
+    with safe_open(checkpoint_file, framework="pt") as f:
+FileNotFoundError: No such file or directory: "../data/qwen_chat/model-00007-of-00008.safetensors"
+09/29 08:26:07:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/29 08:26:07:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/29 08:26:07:  ../data/WikiMEL/train_examples.json
+09/29 08:26:07:  ../data/WikiMEL/train_examples.json
+09/29 08:26:08:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/29 08:26:08:  ../data/WikiMEL/dev_examples.json
+09/29 08:26:08:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/29 08:26:08:  ../data/WikiMEL/dev_examples.json
+09/29 08:26:08:  train data num: 18091  dev data num: 2585
+09/29 08:26:08:  train data num: 18091  dev data num: 2585
+09/29 08:28:32:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 108, in _train
+    ls = args.model(batch_pairs, batch_targets).loss
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 25, in forward
+    outputs = self.lm(input_ids=None, inputs_embeds=inputs_embeds, attention_mask=attention_mask, labels=labels)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 946, in forward
+    return self.base_model(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen_chat/modeling_qwen.py", line 1108, in forward
+    transformer_outputs = self.transformer(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen_chat/modeling_qwen.py", line 926, in forward
+    outputs = torch.utils.checkpoint.checkpoint(
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 249, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 107, in forward
+    outputs = run_function(*args)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen_chat/modeling_qwen.py", line 922, in custom_forward
+    return module(*inputs, use_cache, output_attentions)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen_chat/modeling_qwen.py", line 639, in forward
+    attn_outputs = self.attn(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen_chat/modeling_qwen.py", line 464, in forward
+    mixed_x_layer = self.c_attn(hidden_states)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype
+09/29 08:28:32:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 108, in _train
+    ls = args.model(batch_pairs, batch_targets).loss
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 25, in forward
+    outputs = self.lm(input_ids=None, inputs_embeds=inputs_embeds, attention_mask=attention_mask, labels=labels)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1156, in forward
+    output = self._run_ddp_forward(*inputs, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/parallel/distributed.py", line 1110, in _run_ddp_forward
+    return module_to_run(*inputs[0], **kwargs[0])  # type: ignore[index]
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 946, in forward
+    return self.base_model(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 94, in forward
+    return self.model.forward(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen_chat/modeling_qwen.py", line 1108, in forward
+    transformer_outputs = self.transformer(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen_chat/modeling_qwen.py", line 926, in forward
+    outputs = torch.utils.checkpoint.checkpoint(
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 249, in checkpoint
+    return CheckpointFunction.apply(function, preserve, *args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/autograd/function.py", line 506, in apply
+    return super().apply(*args, **kwargs)  # type: ignore[misc]
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/checkpoint.py", line 107, in forward
+    outputs = run_function(*args)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen_chat/modeling_qwen.py", line 922, in custom_forward
+    return module(*inputs, use_cache, output_attentions)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen_chat/modeling_qwen.py", line 639, in forward
+    attn_outputs = self.attn(
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/root/.cache/huggingface/modules/transformers_modules/qwen_chat/modeling_qwen.py", line 464, in forward
+    mixed_x_layer = self.c_attn(hidden_states)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/linear.py", line 114, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: mat1 and mat2 must have the same dtype
+09/29 08:41:43:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/29 08:41:43:  ../data/WikiMEL/train_examples.json
+09/29 08:41:43:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/29 08:41:43:  ../data/WikiMEL/train_examples.json
+09/29 08:41:44:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/29 08:41:44:  ../data/WikiMEL/dev_examples.json
+09/29 08:41:44:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/29 08:41:44:  ../data/WikiMEL/dev_examples.json
+09/29 08:41:44:  train data num: 18091  dev data num: 2585
+09/29 08:41:44:  train data num: 18091  dev data num: 2585
+09/29 08:41:44:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 322, in wrap_with_peft
+    model = AutoModelForCausalLM.from_pretrained(args.model_path, torch_dtype=torch.float16, device_map=device_map, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/auto_factory.py", line 516, in from_pretrained
+    return model_class.from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 2650, in from_pretrained
+    raise EnvironmentError(
+OSError: Error no file named pytorch_model.bin, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory ../data/llama2.
+09/29 08:41:44:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 322, in wrap_with_peft
+    model = AutoModelForCausalLM.from_pretrained(args.model_path, torch_dtype=torch.float16, device_map=device_map, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/models/auto/auto_factory.py", line 516, in from_pretrained
+    return model_class.from_pretrained(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/modeling_utils.py", line 2650, in from_pretrained
+    raise EnvironmentError(
+OSError: Error no file named pytorch_model.bin, tf_model.h5, model.ckpt.index or flax_model.msgpack found in directory ../data/llama2.
+09/29 09:03:42:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/29 09:03:42:  ../data/WikiMEL/train_examples.json
+09/29 09:03:42:    Retrieve ../data/WikiMEL/train.json ICL examples
+09/29 09:03:42:  ../data/WikiMEL/train_examples.json
+09/29 09:03:42:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/29 09:03:42:  ../data/WikiMEL/dev_examples.json
+09/29 09:03:42:    Retrieve ../data/WikiMEL/dev.json ICL examples
+09/29 09:03:42:  ../data/WikiMEL/dev_examples.json
+09/29 09:03:43:  train data num: 18091  dev data num: 2585
+09/29 09:03:43:  train data num: 18091  dev data num: 2585
+09/29 09:03:43:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 323, in wrap_with_peft
+    model = AutoGPTQForCausalLM.from_quantized(args.model_path, torch_dtype=torch.float16, device_map=device_map, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/auto.py", line 82, in from_quantized
+    return quant_func(
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/_base.py", line 650, in from_quantized
+    quantize_config = BaseQuantizeConfig.from_pretrained(model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/_base.py", line 89, in from_pretrained
+    with open(resolved_config_file, "r", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../data/llama2/quantize_config.json'
+09/29 09:03:43:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 323, in wrap_with_peft
+    model = AutoGPTQForCausalLM.from_quantized(args.model_path, torch_dtype=torch.float16, device_map=device_map, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/auto.py", line 82, in from_quantized
+    return quant_func(
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/_base.py", line 650, in from_quantized
+    quantize_config = BaseQuantizeConfig.from_pretrained(model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/_base.py", line 89, in from_pretrained
+    with open(resolved_config_file, "r", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../data/llama2/quantize_config.json'
+10/01 12:05:01:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:05:01:  ../data/WikiMEL/train_examples.json
+10/01 12:05:01:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:05:01:  ../data/WikiMEL/train_examples.json
+10/01 12:05:03:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:05:03:  ../data/WikiMEL/dev_examples.json
+10/01 12:05:03:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:05:03:  ../data/WikiMEL/dev_examples.json
+10/01 12:05:03:  train data num: 18091  dev data num: 2585
+10/01 12:05:03:  train data num: 18091  dev data num: 2585
+10/01 12:05:03:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 324, in wrap_with_peft
+    model = AutoGPTQForCausalLM.from_quantized(args.model_path, torch_dtype=torch.float16, device_map=device_map, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/auto.py", line 82, in from_quantized
+    return quant_func(
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/_base.py", line 650, in from_quantized
+    quantize_config = BaseQuantizeConfig.from_pretrained(model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/_base.py", line 89, in from_pretrained
+    with open(resolved_config_file, "r", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../data/llama2/quantize_config.json'
+10/01 12:05:03:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 324, in wrap_with_peft
+    model = AutoGPTQForCausalLM.from_quantized(args.model_path, torch_dtype=torch.float16, device_map=device_map, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/auto.py", line 82, in from_quantized
+    return quant_func(
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/_base.py", line 650, in from_quantized
+    quantize_config = BaseQuantizeConfig.from_pretrained(model_name_or_path, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/auto_gptq/modeling/_base.py", line 89, in from_pretrained
+    with open(resolved_config_file, "r", encoding="utf-8") as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../data/llama2/quantize_config.json'
+10/01 12:06:44:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:06:44:  ../data/WikiMEL/train_examples.json
+10/01 12:06:44:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:06:44:  ../data/WikiMEL/train_examples.json
+10/01 12:06:45:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:06:45:  ../data/WikiMEL/dev_examples.json
+10/01 12:06:45:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:06:45:  ../data/WikiMEL/dev_examples.json
+10/01 12:06:45:  train data num: 18091  dev data num: 2585
+10/01 12:06:45:  train data num: 18091  dev data num: 2585
+10/01 12:07:56:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 337, in wrap_with_peft
+    model = get_peft_model(model, peft_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/mapping.py", line 108, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](model, peft_config, adapter_name=adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 916, in __init__
+    super().__init__(model, peft_config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 116, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 109, in __init__
+    super().__init__(model, config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 88, in __init__
+    self.inject_adapter(self.model, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 222, in inject_adapter
+    raise ValueError(
+ValueError: Target modules ['c_proj'] not found in the base model. Please check the target modules and try again.
+10/01 12:07:56:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 337, in wrap_with_peft
+    model = get_peft_model(model, peft_config)
+  File "/usr/local/lib/python3.10/dist-packages/peft/mapping.py", line 108, in get_peft_model
+    return MODEL_TYPE_TO_PEFT_MODEL_MAPPING[peft_config.task_type](model, peft_config, adapter_name=adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 916, in __init__
+    super().__init__(model, peft_config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/peft_model.py", line 116, in __init__
+    self.base_model = cls(model, {adapter_name: peft_config}, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/lora/model.py", line 109, in __init__
+    super().__init__(model, config, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 88, in __init__
+    self.inject_adapter(self.model, adapter_name)
+  File "/usr/local/lib/python3.10/dist-packages/peft/tuners/tuners_utils.py", line 222, in inject_adapter
+    raise ValueError(
+ValueError: Target modules ['c_proj'] not found in the base model. Please check the target modules and try again.
+10/01 12:09:04:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:09:04:  ../data/WikiMEL/train_examples.json
+10/01 12:09:04:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:09:04:  ../data/WikiMEL/train_examples.json
+10/01 12:09:05:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:09:05:  ../data/WikiMEL/dev_examples.json
+10/01 12:09:05:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:09:05:  ../data/WikiMEL/dev_examples.json
+10/01 12:09:05:  train data num: 18091  dev data num: 2585
+10/01 12:09:05:  train data num: 18091  dev data num: 2585
+10/01 12:10:20:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 108, in _train
+    ls = args.model(batch_pairs, batch_targets).loss
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 23, in forward
+    inputs_embeds, attention_mask, labels = self._concat_image_text_embeddings_train(batch_pairs, batch_targets)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 48, in _concat_image_text_embeddings_train
+    if self.kwargs.add_image:
+AttributeError: 'dict' object has no attribute 'add_image'
+10/01 12:10:20:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 108, in _train
+    ls = args.model(batch_pairs, batch_targets).loss
+  File "/usr/local/lib/python3.10/dist-packages/torch/nn/modules/module.py", line 1501, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 23, in forward
+    inputs_embeds, attention_mask, labels = self._concat_image_text_embeddings_train(batch_pairs, batch_targets)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/model_.py", line 48, in _concat_image_text_embeddings_train
+    if self.kwargs.add_image:
+AttributeError: 'dict' object has no attribute 'add_image'
+10/01 12:13:08:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:13:08:  ../data/WikiMEL/train_examples.json
+10/01 12:13:08:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:13:08:  ../data/WikiMEL/train_examples.json
+10/01 12:13:09:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:13:09:  ../data/WikiMEL/dev_examples.json
+10/01 12:13:09:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:13:09:  ../data/WikiMEL/dev_examples.json
+10/01 12:13:09:  train data num: 18091  dev data num: 2585
+10/01 12:13:09:  train data num: 18091  dev data num: 2585
+10/01 12:15:16:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:15:16:  ../data/WikiMEL/train_examples.json
+10/01 12:15:16:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:15:16:  ../data/WikiMEL/train_examples.json
+10/01 12:15:17:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:15:17:  ../data/WikiMEL/dev_examples.json
+10/01 12:15:17:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:15:17:  ../data/WikiMEL/dev_examples.json
+10/01 12:15:17:  train data num: 18091  dev data num: 2585
+10/01 12:15:17:  train data num: 18091  dev data num: 2585
+10/01 12:19:55:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:19:55:  ../data/WikiMEL/train_examples.json
+10/01 12:19:55:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/01 12:19:55:  ../data/WikiMEL/train_examples.json
+10/01 12:19:56:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:19:56:  ../data/WikiMEL/dev_examples.json
+10/01 12:19:56:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/01 12:19:56:  ../data/WikiMEL/dev_examples.json
+10/01 12:19:56:  train data num: 18091  dev data num: 2585
+10/01 12:19:56:  train data num: 18091  dev data num: 2585
+10/02 03:59:28:     #### ACC: 72.9594 % ######
+10/02 03:59:28:  New best model, new acc 72.9594 % >= previous acc -inf %
+10/02 03:59:28:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/02 04:00:31:     #### ACC: 72.9594 % ######
+10/02 04:00:31:  New best model, new acc 72.9594 % >= previous acc -inf %
+10/02 04:00:31:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/02 10:32:48:     #### ACC: 76.2089 % ######
+10/02 10:32:48:  New best model, new acc 76.2089 % >= previous acc 72.9594 %
+10/02 10:32:48:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/02 10:33:10:     #### ACC: 76.2089 % ######
+10/02 10:33:10:  New best model, new acc 76.2089 % >= previous acc 72.9594 %
+10/02 10:33:10:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/02 15:32:03:     #### ACC: 77.2534 % ######
+10/02 15:32:03:  New best model, new acc 77.2534 % >= previous acc 76.2089 %
+10/02 15:32:03:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/02 15:32:17:     #### ACC: 77.2534 % ######
+10/02 15:32:17:  New best model, new acc 77.2534 % >= previous acc 76.2089 %
+10/02 15:32:17:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/02 16:07:23:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:07:23:  ../data/WikiMEL/train_examples.json
+10/02 16:07:23:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:07:23:  ../data/WikiMEL/train_examples.json
+10/02 16:07:24:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:07:24:  ../data/WikiMEL/dev_examples.json
+10/02 16:07:24:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:07:24:  ../data/WikiMEL/dev_examples.json
+10/02 16:07:24:  train data num: 18091  dev data num: 2585
+10/02 16:07:24:  train data num: 18091  dev data num: 2585
+10/02 16:09:38:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:09:38:  ../data/WikiMEL/train_examples.json
+10/02 16:09:38:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:09:38:  ../data/WikiMEL/train_examples.json
+10/02 16:09:40:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:09:40:  ../data/WikiMEL/dev_examples.json
+10/02 16:09:40:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:09:40:  ../data/WikiMEL/dev_examples.json
+10/02 16:09:40:  train data num: 18091  dev data num: 2585
+10/02 16:09:40:  train data num: 18091  dev data num: 2585
+10/02 16:24:38:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 147, in _main
+    args.train_embed = get_embed(args.ment_embed_file, mention_data = args.data_file['train'], args=args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 269, in get_embed
+    all_embeds = pickle.load(f)
+  File "/usr/local/lib/python3.10/dist-packages/torch/storage.py", line 241, in _load_from_bytes
+    return torch.load(io.BytesIO(b))
+  File "/usr/local/lib/python3.10/dist-packages/torch/serialization.py", line 815, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/serialization.py", line 1051, in _legacy_load
+    typed_storage._untyped_storage._set_from_file(
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+10/02 16:24:38:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 147, in _main
+    args.train_embed = get_embed(args.ment_embed_file, mention_data = args.data_file['train'], args=args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 269, in get_embed
+    all_embeds = pickle.load(f)
+  File "/usr/local/lib/python3.10/dist-packages/torch/storage.py", line 241, in _load_from_bytes
+    return torch.load(io.BytesIO(b))
+  File "/usr/local/lib/python3.10/dist-packages/torch/serialization.py", line 815, in load
+    return _legacy_load(opened_file, map_location, pickle_module, **pickle_load_args)
+  File "/usr/local/lib/python3.10/dist-packages/torch/serialization.py", line 1051, in _legacy_load
+    typed_storage._untyped_storage._set_from_file(
+RuntimeError: CUDA error: out of memory
+CUDA kernel errors might be asynchronously reported at some other API call, so the stacktrace below might be incorrect.
+For debugging consider passing CUDA_LAUNCH_BLOCKING=1.
+Compile with `TORCH_USE_CUDA_DSA` to enable device-side assertions.
+
+10/02 16:28:52:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:28:52:  ../data/WikiMEL/train_examples.json
+10/02 16:28:52:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:28:52:  ../data/WikiMEL/train_examples.json
+10/02 16:28:53:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:28:53:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:28:53:  ../data/WikiMEL/dev_examples.json
+10/02 16:28:53:  ../data/WikiMEL/dev_examples.json
+10/02 16:28:53:  train data num: 18091  dev data num: 2585
+10/02 16:28:53:  train data num: 18091  dev data num: 2585
+10/02 16:29:32:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:29:32:  ../data/WikiMEL/train_examples.json
+10/02 16:29:32:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:29:32:  ../data/WikiMEL/train_examples.json
+10/02 16:29:33:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:29:33:  ../data/WikiMEL/dev_examples.json
+10/02 16:29:33:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:29:33:  ../data/WikiMEL/dev_examples.json
+10/02 16:29:33:  train data num: 18091  dev data num: 2585
+10/02 16:29:33:  train data num: 18091  dev data num: 2585
+10/02 16:31:01:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:31:01:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:31:01:  ../data/WikiMEL/train_examples.json
+10/02 16:31:01:  ../data/WikiMEL/train_examples.json
+10/02 16:31:01:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:31:01:  ../data/WikiMEL/dev_examples.json
+10/02 16:31:01:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:31:01:  ../data/WikiMEL/dev_examples.json
+10/02 16:31:01:  train data num: 18091  dev data num: 2585
+10/02 16:31:01:  train data num: 18091  dev data num: 2585
+10/02 16:32:52:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:32:52:  ../data/WikiMEL/train_examples.json
+10/02 16:32:52:    Retrieve ../data/WikiMEL/train.json ICL examples
+10/02 16:32:52:  ../data/WikiMEL/train_examples.json
+10/02 16:32:53:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:32:53:  ../data/WikiMEL/dev_examples.json
+10/02 16:32:53:    Retrieve ../data/WikiMEL/dev.json ICL examples
+10/02 16:32:53:  ../data/WikiMEL/dev_examples.json
+10/02 16:32:53:  train data num: 18091  dev data num: 2585
+10/02 16:32:53:  train data num: 18091  dev data num: 2585
+10/02 16:59:32:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 319, in wrap_with_peft
+    accelerator = Accelerator()
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/accelerator.py", line 369, in __init__
+    self.state = AcceleratorState(
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/state.py", line 732, in __init__
+    PartialState(cpu, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/state.py", line 202, in __init__
+    torch.distributed.init_process_group(backend=self.backend, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/distributed_c10d.py", line 900, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/rendezvous.py", line 245, in _env_rendezvous_handler
+    store = _create_c10d_store(master_addr, master_port, rank, world_size, timeout)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/rendezvous.py", line 172, in _create_c10d_store
+    tcp_store = TCPStore(hostname, port, world_size, False, timeout)
+TimeoutError: The client socket has timed out after 1800s while trying to connect to (127.0.0.1, 0).
+10/02 16:59:32:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 319, in wrap_with_peft
+    accelerator = Accelerator()
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/accelerator.py", line 369, in __init__
+    self.state = AcceleratorState(
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/state.py", line 732, in __init__
+    PartialState(cpu, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/accelerate/state.py", line 202, in __init__
+    torch.distributed.init_process_group(backend=self.backend, **kwargs)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/distributed_c10d.py", line 900, in init_process_group
+    store, rank, world_size = next(rendezvous_iterator)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/rendezvous.py", line 245, in _env_rendezvous_handler
+    store = _create_c10d_store(master_addr, master_port, rank, world_size, timeout)
+  File "/usr/local/lib/python3.10/dist-packages/torch/distributed/rendezvous.py", line 172, in _create_c10d_store
+    tcp_store = TCPStore(hostname, port, world_size, False, timeout)
+TimeoutError: The client socket has timed out after 1800s while trying to connect to (127.0.0.1, 0).
+10/02 23:06:55:     #### ACC: 0.0000 % ######
+10/02 23:06:55:  New best model, new acc 0.0000 % >= previous acc -inf %
+10/02 23:06:56:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/02 23:06:58:     #### ACC: 0.0000 % ######
+10/02 23:06:58:  New best model, new acc 0.0000 % >= previous acc -inf %
+10/02 23:06:58:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/03 05:38:35:     #### ACC: 73.5010 % ######
+10/03 05:38:35:  New best model, new acc 73.5010 % >= previous acc 0.0000 %
+10/03 05:38:35:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/03 05:38:49:     #### ACC: 73.5010 % ######
+10/03 05:38:49:  New best model, new acc 73.5010 % >= previous acc 0.0000 %
+10/03 05:38:49:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/03 11:00:20:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 103, in _train
+    for batch_idx, batch_data in enumerate(args.train_dl):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 181, in collate_fn
+    batch_pairs.append(self._get_pairs(item))
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 189, in _get_pairs
+    prefix_list = self._similar_prefix(item)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 200, in _similar_prefix
+    h = h5py.File(self.kwargs['img_file'], 'r')
+  File "/usr/local/lib/python3.10/dist-packages/h5py/_hl/files.py", line 567, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/usr/local/lib/python3.10/dist-packages/h5py/_hl/files.py", line 231, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 106, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to open file (unable to open file: name = '../data/WikiMEL/image_feature.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+10/03 11:00:20:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 103, in _train
+    for batch_idx, batch_data in enumerate(args.train_dl):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 181, in collate_fn
+    batch_pairs.append(self._get_pairs(item))
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 189, in _get_pairs
+    prefix_list = self._similar_prefix(item)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 200, in _similar_prefix
+    h = h5py.File(self.kwargs['img_file'], 'r')
+  File "/usr/local/lib/python3.10/dist-packages/h5py/_hl/files.py", line 567, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/usr/local/lib/python3.10/dist-packages/h5py/_hl/files.py", line 231, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 106, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to open file (unable to open file: name = '../data/WikiMEL/image_feature.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+10/03 11:01:51:    Retrieve ../../data/WikiMEL/train.json ICL examples
+10/03 11:01:51:    Retrieve ../../data/WikiMEL/train.json ICL examples
+10/03 11:01:51:  ../../data/WikiMEL/train_examples.json
+10/03 11:01:51:  ../../data/WikiMEL/train_examples.json
+10/03 11:01:53:    Retrieve ../../data/WikiMEL/dev.json ICL examples
+10/03 11:01:53:  ../../data/WikiMEL/dev_examples.json
+10/03 11:01:53:    Retrieve ../../data/WikiMEL/dev.json ICL examples
+10/03 11:01:53:  ../../data/WikiMEL/dev_examples.json
+10/03 11:01:53:  train data num: 18091  dev data num: 2585
+10/03 11:01:53:  train data num: 18091  dev data num: 2585
+10/03 11:01:53:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 322, in wrap_with_peft
+    args.tokenizer = LlamaTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 1813, in from_pretrained
+    resolved_vocab_files[file_id] = cached_file(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py", line 429, in cached_file
+    resolved_file = hf_hub_download(
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py", line 110, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py", line 158, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '../data/llama7bhf'. Use `repo_type` argument if needed.
+10/03 11:01:53:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 168, in _main
+    lm = wrap_with_peft(args, inference=False)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 322, in wrap_with_peft
+    args.tokenizer = LlamaTokenizer.from_pretrained(args.model_path, trust_remote_code=True)
+  File "/usr/local/lib/python3.10/dist-packages/transformers/tokenization_utils_base.py", line 1813, in from_pretrained
+    resolved_vocab_files[file_id] = cached_file(
+  File "/usr/local/lib/python3.10/dist-packages/transformers/utils/hub.py", line 429, in cached_file
+    resolved_file = hf_hub_download(
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py", line 110, in _inner_fn
+    validate_repo_id(arg_value)
+  File "/usr/local/lib/python3.10/dist-packages/huggingface_hub/utils/_validators.py", line 158, in validate_repo_id
+    raise HFValidationError(
+huggingface_hub.utils._validators.HFValidationError: Repo id must be in the form 'repo_name' or 'namespace/repo_name': '../data/llama7bhf'. Use `repo_type` argument if needed.
+10/03 11:02:57:    Retrieve ../../data/WikiMEL/train.json ICL examples
+10/03 11:02:57:  ../../data/WikiMEL/train_examples.json
+10/03 11:02:57:    Retrieve ../../data/WikiMEL/train.json ICL examples
+10/03 11:02:57:  ../../data/WikiMEL/train_examples.json
+10/03 11:02:58:    Retrieve ../../data/WikiMEL/dev.json ICL examples
+10/03 11:02:58:  ../../data/WikiMEL/dev_examples.json
+10/03 11:02:58:    Retrieve ../../data/WikiMEL/dev.json ICL examples
+10/03 11:02:58:  ../../data/WikiMEL/dev_examples.json
+10/03 11:02:58:  train data num: 18091  dev data num: 2585
+10/03 11:02:58:  train data num: 18091  dev data num: 2585
+10/03 11:07:37:    Retrieve ../../data/WikiMEL/train.json ICL examples
+10/03 11:07:37:  ../../data/WikiMEL/train_examples.json
+10/03 11:07:37:    Retrieve ../../data/WikiMEL/train.json ICL examples
+10/03 11:07:37:  ../../data/WikiMEL/train_examples.json
+10/03 11:07:38:    Retrieve ../../data/WikiMEL/dev.json ICL examples
+10/03 11:07:38:  ../../data/WikiMEL/dev_examples.json
+10/03 11:07:38:    Retrieve ../../data/WikiMEL/dev.json ICL examples
+10/03 11:07:38:  ../../data/WikiMEL/dev_examples.json
+10/03 11:07:38:  train data num: 18091  dev data num: 2585
+10/03 11:07:38:  train data num: 18091  dev data num: 2585
+10/03 11:09:52:    Retrieve ../../data/WikiMEL/train.json ICL examples
+10/03 11:09:52:    Retrieve ../../data/WikiMEL/train.json ICL examples
+10/03 11:09:52:  ../../data/WikiMEL/train_examples.json
+10/03 11:09:52:  ../../data/WikiMEL/train_examples.json
+10/03 11:09:53:    Retrieve ../../data/WikiMEL/dev.json ICL examples
+10/03 11:09:53:  ../../data/WikiMEL/dev_examples.json
+10/03 11:09:53:    Retrieve ../../data/WikiMEL/dev.json ICL examples
+10/03 11:09:53:  ../../data/WikiMEL/dev_examples.json
+10/03 11:09:53:  train data num: 18091  dev data num: 2585
+10/03 11:09:53:  train data num: 18091  dev data num: 2585
+10/03 17:43:35:     #### ACC: 0.0000 % ######
+10/03 17:43:36:  New best model, new acc 0.0000 % >= previous acc -inf %
+10/03 17:43:36:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/03 17:44:20:     #### ACC: 0.0000 % ######
+10/03 17:44:20:  New best model, new acc 0.0000 % >= previous acc -inf %
+10/03 17:44:20:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/04 00:16:15:     #### ACC: 73.5010 % ######
+10/04 00:16:15:  New best model, new acc 73.5010 % >= previous acc 0.0000 %
+10/04 00:16:15:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/04 00:17:00:     #### ACC: 73.5010 % ######
+10/04 00:17:00:  New best model, new acc 73.5010 % >= previous acc 0.0000 %
+10/04 00:17:00:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/04 06:47:50:     #### ACC: 75.6286 % ######
+10/04 06:47:50:  New best model, new acc 75.6286 % >= previous acc 73.5010 %
+10/04 06:47:50:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/04 06:48:13:     #### ACC: 75.6286 % ######
+10/04 06:48:13:  New best model, new acc 75.6286 % >= previous acc 73.5010 %
+10/04 06:48:13:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/04 11:02:29:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 103, in _train
+    for batch_idx, batch_data in enumerate(args.train_dl):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 181, in collate_fn
+    batch_pairs.append(self._get_pairs(item))
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 189, in _get_pairs
+    prefix_list = self._similar_prefix(item)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 200, in _similar_prefix
+    h = h5py.File(self.kwargs['img_file'], 'r')
+  File "/usr/local/lib/python3.10/dist-packages/h5py/_hl/files.py", line 567, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/usr/local/lib/python3.10/dist-packages/h5py/_hl/files.py", line 231, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 106, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to open file (unable to open file: name = '../../data/WikiMEL/image_feature.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+10/04 11:02:29:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 196, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 180, in _main
+    _train(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 103, in _train
+    for batch_idx, batch_data in enumerate(args.train_dl):
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 633, in __next__
+    data = self._next_data()
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/dataloader.py", line 677, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/usr/local/lib/python3.10/dist-packages/torch/utils/data/_utils/fetch.py", line 54, in fetch
+    return self.collate_fn(data)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 181, in collate_fn
+    batch_pairs.append(self._get_pairs(item))
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 189, in _get_pairs
+    prefix_list = self._similar_prefix(item)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/utils.py", line 200, in _similar_prefix
+    h = h5py.File(self.kwargs['img_file'], 'r')
+  File "/usr/local/lib/python3.10/dist-packages/h5py/_hl/files.py", line 567, in __init__
+    fid = make_fid(name, mode, userblock_size, fapl, fcpl, swmr=swmr)
+  File "/usr/local/lib/python3.10/dist-packages/h5py/_hl/files.py", line 231, in make_fid
+    fid = h5f.open(name, flags, fapl=fapl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 106, in h5py.h5f.open
+FileNotFoundError: [Errno 2] Unable to open file (unable to open file: name = '../../data/WikiMEL/image_feature.h5', errno = 2, error message = 'No such file or directory', flags = 0, o_flags = 0)
+10/04 11:03:49:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/04 11:03:49:  ../../_ELdata/WikiMEL/train_examples.json
+10/04 11:03:49:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/04 11:03:49:  ../../_ELdata/WikiMEL/train_examples.json
+10/04 11:03:51:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/04 11:03:51:  ../../_ELdata/WikiMEL/dev_examples.json
+10/04 11:03:51:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/04 11:03:51:  ../../_ELdata/WikiMEL/dev_examples.json
+10/04 11:03:51:  train data num: 18091  dev data num: 2585
+10/04 11:03:51:  train data num: 18091  dev data num: 2585
+10/04 17:36:01:     #### ACC: 0.0000 % ######
+10/04 17:36:01:  New best model, new acc 0.0000 % >= previous acc -inf %
+10/04 17:36:01:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/04 17:37:17:     #### ACC: 0.0000 % ######
+10/04 17:37:17:  New best model, new acc 0.0000 % >= previous acc -inf %
+10/04 17:37:17:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/05 00:07:49:     #### ACC: 73.5010 % ######
+10/05 00:07:49:  New best model, new acc 73.5010 % >= previous acc 0.0000 %
+10/05 00:07:49:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/05 00:07:59:     #### ACC: 73.5010 % ######
+10/05 00:07:59:  New best model, new acc 73.5010 % >= previous acc 0.0000 %
+10/05 00:07:59:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/05 06:37:25:     #### ACC: 75.6286 % ######
+10/05 06:37:25:  New best model, new acc 75.6286 % >= previous acc 73.5010 %
+10/05 06:37:25:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/05 06:38:34:     #### ACC: 75.6286 % ######
+10/05 06:38:34:  New best model, new acc 75.6286 % >= previous acc 73.5010 %
+10/05 06:38:34:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/05 13:08:15:     #### ACC: 76.5957 % ######
+10/05 13:08:15:  New best model, new acc 76.5957 % >= previous acc 75.6286 %
+10/05 13:08:15:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/05 13:09:32:     #### ACC: 76.5957 % ######
+10/05 13:09:32:  New best model, new acc 76.5957 % >= previous acc 75.6286 %
+10/05 13:09:32:  Save to ./checkpoint/llama_linear_1token_16examples.pkl
+10/07 08:07:55:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 203, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 158, in _main
+    args.ICL_ds = ELDataset(args.data_file['train'], tokenizer=None, args=args, img_file=args.img_file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 8, in __init__
+    self.data = self._get_data(file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 30, in _get_data
+    raw_data = [json.loads(line) for line in f]
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 30, in <listcomp>
+    raw_data = [json.loads(line) for line in f]
+NameError: name 'json' is not defined
+10/07 08:07:55:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 203, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 158, in _main
+    args.ICL_ds = ELDataset(args.data_file['train'], tokenizer=None, args=args, img_file=args.img_file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 8, in __init__
+    self.data = self._get_data(file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 30, in _get_data
+    raw_data = [json.loads(line) for line in f]
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 30, in <listcomp>
+    raw_data = [json.loads(line) for line in f]
+NameError: name 'json' is not defined
+10/07 08:08:29:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 203, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 161, in _main
+    train_ds = ELDataset(args.data_file['train'], tokenizer=True, args=args, train_flag=True, **args.kwargs_ds)  # train_flag: for exclude same training example
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 21, in __init__
+    if not os.path.exists(self.kwargs['img_file']) or refresh:   # Image file exist, handle image feature
+NameError: name 'os' is not defined
+10/07 08:08:29:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 203, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 161, in _main
+    train_ds = ELDataset(args.data_file['train'], tokenizer=True, args=args, train_flag=True, **args.kwargs_ds)  # train_flag: for exclude same training example
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 21, in __init__
+    if not os.path.exists(self.kwargs['img_file']) or refresh:   # Image file exist, handle image feature
+NameError: name 'os' is not defined
+10/07 08:08:55:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/07 08:08:55:  ../../_ELdata/WikiMEL/train_examples.json
+10/07 08:08:55:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/07 08:08:55:  ../../_ELdata/WikiMEL/train_examples.json
+10/07 08:08:56:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 203, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 161, in _main
+    train_ds = ELDataset(args.data_file['train'], tokenizer=True, args=args, train_flag=True, **args.kwargs_ds)  # train_flag: for exclude same training example
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 26, in __init__
+    self._get_examples(args) # get ICL examples from training set
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 112, in _get_examples
+    for index, tmpDict in tqdm(enumerate(self.data), desc="loading examples from examples.json", ncols=100):
+NameError: name 'tqdm' is not defined
+10/07 08:08:56:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 203, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 161, in _main
+    train_ds = ELDataset(args.data_file['train'], tokenizer=True, args=args, train_flag=True, **args.kwargs_ds)  # train_flag: for exclude same training example
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 26, in __init__
+    self._get_examples(args) # get ICL examples from training set
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 112, in _get_examples
+    for index, tmpDict in tqdm(enumerate(self.data), desc="loading examples from examples.json", ncols=100):
+NameError: name 'tqdm' is not defined
+10/07 08:09:18:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/07 08:09:18:  ../../_ELdata/WikiMEL/train_examples.json
+10/07 08:09:18:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/07 08:09:18:  ../../_ELdata/WikiMEL/train_examples.json
+10/07 08:09:18:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 203, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 161, in _main
+    train_ds = ELDataset(args.data_file['train'], tokenizer=True, args=args, train_flag=True, **args.kwargs_ds)  # train_flag: for exclude same training example
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 27, in __init__
+    self._get_examples(args) # get ICL examples from training set
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 113, in _get_examples
+    for index, tmpDict in tqdm(enumerate(self.data), desc="loading examples from examples.json", ncols=100):
+TypeError: 'module' object is not callable
+10/07 08:09:18:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 203, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 161, in _main
+    train_ds = ELDataset(args.data_file['train'], tokenizer=True, args=args, train_flag=True, **args.kwargs_ds)  # train_flag: for exclude same training example
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 27, in __init__
+    self._get_examples(args) # get ICL examples from training set
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 113, in _get_examples
+    for index, tmpDict in tqdm(enumerate(self.data), desc="loading examples from examples.json", ncols=100):
+TypeError: 'module' object is not callable
+10/07 08:11:02:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/07 08:11:02:  ../../_ELdata/WikiMEL/train_examples.json
+10/07 08:11:02:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/07 08:11:02:  ../../_ELdata/WikiMEL/train_examples.json
+10/07 08:11:03:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/07 08:11:03:  ../../_ELdata/WikiMEL/dev_examples.json
+10/07 08:11:03:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/07 08:11:03:  ../../_ELdata/WikiMEL/dev_examples.json
+10/07 08:11:03:  train data num: 18091  dev data num: 2585
+10/07 08:11:03:  train data num: 18091  dev data num: 2585
+10/07 08:23:53:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 203, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 166, in _main
+    args.logger.info(f'train data num: {len(train_ds)}  dev data num: {len(dev_ds)}')
+UnboundLocalError: local variable 'train_ds' referenced before assignment
+10/07 08:23:53:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 203, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 166, in _main
+    args.logger.info(f'train data num: {len(train_ds)}  dev data num: {len(dev_ds)}')
+UnboundLocalError: local variable 'train_ds' referenced before assignment
+10/08 02:59:05:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/08 02:59:05:  ../../_ELdata/WikiMEL/train_examples.json
+10/08 02:59:05:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/08 02:59:05:  ../../_ELdata/WikiMEL/train_examples.json
+10/08 02:59:06:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 207, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 162, in _main
+    dev_ds = ELDataset(args.data_file['dev'], tokenizer=True, args=args, **args.kwargs_ds)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 18, in __init__
+    self.data = self._get_data(file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 40, in _get_data
+    raw_data = [json.loads(line) for line in f]
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 40, in <listcomp>
+    raw_data = [json.loads(line) for line in f]
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
+10/08 02:59:06:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 207, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 162, in _main
+    dev_ds = ELDataset(args.data_file['dev'], tokenizer=True, args=args, **args.kwargs_ds)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 18, in __init__
+    self.data = self._get_data(file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 40, in _get_data
+    raw_data = [json.loads(line) for line in f]
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 40, in <listcomp>
+    raw_data = [json.loads(line) for line in f]
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
+10/08 09:02:39:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/08 09:02:39:  ../../_ELdata/WikiMEL/train_examples.json
+10/08 09:02:39:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/08 09:02:39:  ../../_ELdata/WikiMEL/train_examples.json
+10/08 09:02:39:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 207, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 162, in _main
+    dev_ds = ELDataset(args.data_file['dev'], tokenizer=True, args=args, **args.kwargs_ds)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 18, in __init__
+    self.data = self._get_data(file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 40, in _get_data
+    raw_data = [json.loads(line) for line in f]
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 40, in <listcomp>
+    raw_data = [json.loads(line) for line in f]
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
+10/08 09:02:39:  Error
+Traceback (most recent call last):
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 207, in <module>
+    _main(args)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/main.py", line 162, in _main
+    dev_ds = ELDataset(args.data_file['dev'], tokenizer=True, args=args, **args.kwargs_ds)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 18, in __init__
+    self.data = self._get_data(file)
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 40, in _get_data
+    raw_data = [json.loads(line) for line in f]
+  File "/workspace/GEMEL/WikiMEL_LLaMA_2/dataset_el.py", line 40, in <listcomp>
+    raw_data = [json.loads(line) for line in f]
+  File "/usr/lib/python3.10/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python3.10/json/decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/usr/lib/python3.10/json/decoder.py", line 353, in raw_decode
+    obj, end = self.scan_once(s, idx)
+json.decoder.JSONDecodeError: Expecting property name enclosed in double quotes: line 2 column 1 (char 2)
+10/08 09:05:04:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/08 09:05:04:  ../../_ELdata/WikiMEL/train_examples.json
+10/08 09:05:04:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/08 09:05:04:  ../../_ELdata/WikiMEL/train_examples.json
+10/08 09:05:05:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/08 09:05:05:  ../../_ELdata/WikiMEL/dev_examples.json
+10/08 09:05:05:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/08 09:05:05:  ../../_ELdata/WikiMEL/dev_examples.json
+10/08 09:05:05:  train data num: 18091  dev data num: 2585
+10/08 09:05:05:  train data num: 18091  dev data num: 2585
+10/09 11:27:15:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/09 11:27:15:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/09 11:27:15:  ../../_ELdata/WikiMEL/train_examples.json
+10/09 11:27:15:  ../../_ELdata/WikiMEL/train_examples.json
+10/09 11:27:16:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/09 11:27:16:  ../../_ELdata/WikiMEL/dev_examples.json
+10/09 11:27:16:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/09 11:27:16:  ../../_ELdata/WikiMEL/dev_examples.json
+10/09 11:27:16:  train data num: 18091  dev data num: 2585
+10/09 11:27:16:  train data num: 18091  dev data num: 2585
+10/10 05:15:50:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/10 05:15:50:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/10 05:15:50:  ../../_ELdata/WikiMEL/train_examples.json
+10/10 05:15:50:  ../../_ELdata/WikiMEL/train_examples.json
+10/10 05:15:52:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/10 05:15:52:  ../../_ELdata/WikiMEL/dev_examples.json
+10/10 05:15:52:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/10 05:15:52:  ../../_ELdata/WikiMEL/dev_examples.json
+10/10 05:15:52:  train data num: 18091  dev data num: 2585
+10/10 05:15:52:  train data num: 18091  dev data num: 2585
+10/10 05:20:59:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/10 05:20:59:  ../../_ELdata/WikiMEL/train_examples.json
+10/10 05:20:59:    Retrieve ../../_ELdata/WikiMEL/train.json ICL examples
+10/10 05:20:59:  ../../_ELdata/WikiMEL/train_examples.json
+10/10 05:21:00:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/10 05:21:00:  ../../_ELdata/WikiMEL/dev_examples.json
+10/10 05:21:00:    Retrieve ../../_ELdata/WikiMEL/dev.json ICL examples
+10/10 05:21:00:  ../../_ELdata/WikiMEL/dev_examples.json
+10/10 05:21:00:  train data num: 18091  dev data num: 2585
+10/10 05:21:00:  train data num: 18091  dev data num: 2585
